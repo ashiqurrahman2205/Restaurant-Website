@@ -10,29 +10,46 @@
   <body>
     <!--Hero Section Starting-->
     <section>
-        <div class="2xl:container bg-green-300 bg-hero-section ">
-            <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%] text-center">
-                <div class=" text-white flex  flex-col justify-center items-center gap-5">
-                    <h1 class="text-5xl font-['Poppins']">Get Delicious Food Anytime</h1>
-                    <p class="text-2xl text-gray-300">Eat Smart & Healthy</p>
-                    <div class="text-xl text-white flex gap-3">
-                        <button class="bg-[#d0b200] p-3 rounded-lg">View Menu</button>
-                        <button class="border-solid border-2 border-[#d0b200] p-3 rounded-lg text-[#d0b200]">Order Now</button>
-                    </div>
-                </div>
+      <div class="2xl:container bg-green-300 bg-hero-section">
+        <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%] text-center">
+          <div
+            class="text-white flex flex-col justify-center items-center gap-5"
+          >
+            <h1 class="text-5xl font-['Poppins']">
+              Get Delicious Food Anytime
+            </h1>
+            <p class="text-2xl text-gray-300">Eat Smart & Healthy</p>
+            <div class="text-xl text-white flex gap-3">
+              <button class="bg-[#d0b200] p-3 rounded-lg">View Menu</button>
+              <button
+                class="border-solid border-2 border-[#d0b200] p-3 rounded-lg text-[#d0b200]"
+              >
+                Order Now
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--Hero Section Ending-->
 
     <!--Why choose us section start-->
-    <section class="py-10 px-10">
+    <section class="py-10 bg-[#F9FBFE]">
       <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid grid-cols-1">
+          <h2 class="font-['Poppins'] text-2xl font-semibold">
+            Why Choose Us?
+          </h2>
+          <p class="font-['Poppins'] text-sm text-gray-600 mt-3 mb-5">
+            We use both original recipes and classic versions of famous food
+            items.
+          </p>
+        </div>
         <div
-          class="safety-container w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5"
+          class="safety-container w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-14"
         >
           <div
-            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center space-y-3 rounded-2xl"
+            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center rounded-2xl"
           >
             <img src="./assets/food-serve.png" alt="food-serve " />
             <h2 class="text-lg">Food Services</h2>
@@ -44,7 +61,7 @@
           </div>
 
           <div
-            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center space-y-3 rounded-2xl"
+            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center rounded-2xl"
           >
             <img src="./assets/fruits-img.png" alt="fruits-img" />
             <h2 class="text-lg">Fresh Food</h2>
@@ -56,7 +73,7 @@
           </div>
 
           <div
-            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center space-y-3 rounded-2xl"
+            class="bg-white shadow text-center py-3 px-2 font-['Poppins'] flex flex-col justify-center items-center rounded-2xl"
           >
             <img src="./assets/offers-img.png" alt="offers-img" />
             <h2 class="text-lg">Best Offers</h2>
@@ -69,14 +86,21 @@
       </div>
     </section>
     <!-- why choose us section end-->
+
     <!--Explore menu starting-->
-    <section>
+    <section class="mb-10">
       <div class="2xl:container">
-        <div class="w-[90%] mx-auto grid grid-cols-1 font-['Poppins'] text-2xl font-semibold m-5"><h2>Explore Menu</h2></div>
         <div
-          class="w-[90%] mx-auto font-['Poppins'] grid grid-cols-1 md:grid-cols-4 gap-y-8 gap-x-8"
+          class="w-[90%] mx-auto grid grid-cols-1 font-['Poppins'] text-2xl font-semibold m-5"
         >
-          <div class="px-3 py-2 flex flex-col justify-center items-center bg-white shadow rounded-2xl">
+          <h2>Explore Menu</h2>
+        </div>
+        <div
+          class="w-[90%] mx-auto font-['Poppins'] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-8"
+        >
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white shadow rounded-2xl"
+          >
             <img
               src="./assets/em-ginger-fried-img.png"
               alt="em-ginger-fried-img"
@@ -97,138 +121,353 @@
               </svg>
             </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img
               src="./assets/em-veg-starters-img.png"
               alt="em-veg-starters-img"
             />
             <p>Veg Starters</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-soup-img.png" alt="em-soup-img" />
             <p>Soups</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-grilled-seafood-img.png" alt="seafood" />
             <p>Fish & Sea Food</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-hyderabadi-biryani-img.png" alt="Biryani" />
             <p>Main Course</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-mushroom-noodles-img.png" alt="Noodles" />
             <p>Noodles</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-gluten-img.png" alt="Salad" />
             <p>Salads</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
-          <div class="px-3 py-2 flex flex-col justify-center items-center  bg-white rounded-2xl shadow">
+          <div
+            class="px-3 py-2 flex flex-col justify-center items-center bg-white rounded-2xl shadow"
+          >
             <img src="./assets/em-coffee-bourbon-img.png" alt="Dessert" />
             <p>Desserts</p>
             <p class="flex justify-start items-center">
-                View All
-                <svg
-                  fill="currentColor"
-                  viewbox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                >
-                  <path
-                    fillrule="evenodd"
-                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
-                  />
-                </svg>
-              </p>
+              View All
+              <svg
+                fill="currentColor"
+                viewbox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                />
+              </svg>
+            </p>
           </div>
         </div>
       </div>
     </section>
     <!--Explore Menu End-->
+
+    <!--Healthy Section Starting-->
+    <section>
+      <div class="2xl:container bg-[#F9FBFE]">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div class="flex justify-center items-center">
+            <img
+              src="./assets/healthy-food-plate-img.png"
+              alt="healthy-food-plate-img"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-start font-['Poppins'] gap-y-5"
+          >
+            <h2 class="text-2xl font-semibold">
+              Fresh, Healthy, Organic, Delicious Fruits
+            </h2>
+            <p class="text-sm text-gray-600">
+              Say no to harmful chemicals and go fully organic with our range of
+              fresh fruits and veggies. Pamper your body and your senses with
+              the true and unadulterated gifts from mother nature. with the true
+              and unadulterated gifts from mother nature.
+            </p>
+            <button
+              class="bg-[#d0b200] text-white py-3 px-2 text-sm rounded-lg"
+            >
+              Watch Video
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Healthy Section End-->
+
+    <!--Payment Sectioon Starting-->
+    <section class="py-10">
+      <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="flex flex-col justify-center items-start font-['Poppins'] gap-y-5 order-2 md:order-1"
+          >
+            <h2 class="text-2xl font-semibold">Delivery and Payment</h2>
+            <p class="text-sm text-gray-600">
+              Enjoy hassle-free payment with the plenitude of payment options
+              available for you. Get live tracking and locate your food on a
+              live map. It's quite a sight to see your food arrive to your door.
+              Plus, you get a 5% discount on every order every time you pay
+              online.
+            </p>
+            <button
+              class="bg-[#d0b200] text-white py-3 px-2 rounded-lg text-sm"
+            >
+              Order Now
+            </button>
+            <div class="flex gap-x-5">
+              <img
+                src="./assets/visa-card-img.png"
+                alt="visa-card-img"
+                class="h-10"
+              />
+              <img
+                src="./assets/master-card-img.png"
+                alt="master-card-img"
+                class="h-10"
+              />
+              <img
+                src="./assets/american-express-img.png"
+                alt="american-express-img "
+                class="h-10"
+              />
+              <img
+                src="./assets/paypal-card-img.png"
+                alt="paypal-card-img"
+                class="h-10"
+              />
+            </div>
+          </div>
+          <div class="flex justify-center items-center order-1 md:order-2">
+            <img
+              src="./assets/delivery-payment-section-img.png"
+              alt=""
+              class="h-80"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Payment Section Ending -->
+
+    <!--Thank You Section Start-->
+    <section class="py-10 bg-[#FAF7E5]">
+      <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="font-['Poppins'] flex flex-col justify-center items-start space-y-5"
+          >
+            <h2 class="text-2xl font-semibold">
+              Thank you for being a valuable customer to us.
+            </h2>
+            <p class="text-sm text-gray-600">We have a surprise gift for you</p>
+            <img
+              src="./assets/thanking-customers-section-img.png"
+              alt="thanking-customers-section-img"
+              class="h-80 md:hidden"
+            />
+            <button
+              class="text-sm bg-[#d0b200] text-white rounded-lg px-2 py-3"
+            >
+              Redeem Now
+            </button>
+          </div>
+          <div class="hidden md:flex justify-center items-center">
+            <img
+              src="./assets/thanking-customers-section-img.png"
+              alt="thanking-customers-section-img"
+              class="h-80"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Thnak You Section Ending-->
+
+    <!--Follow us Section start-->
+    <section class="py-20">
+      <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid grid-cols-1 gap-4">
+          <div class="flex justify-center">
+            <h2 class="font-['Poppins'] text-2xl font-semibold">Follow Us</h2>
+          </div>
+          <div class="flex justify-center gap-4">
+            <div
+              class="h-14 w-14 rounded-full bg-[#FAF7E5] flex items-center justify-center"
+            >
+              <svg
+                viewbox="0 0 24 24"
+                fill="#d0b200"
+                height="1.5em"
+                width="1.5em"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"
+                />
+              </svg>
+            </div>
+            <div
+              class="h-14 w-14 rounded-full bg-[#FAF7E5] flex items-center justify-center"
+            >
+              <svg
+                viewbox="0 0 24 24"
+                fill="#d0b200"
+                height="1.5em"
+                width="1.5em"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </div>
+            <div
+              class="h-14 w-14 rounded-full bg-[#FAF7E5] flex items-center justify-center"
+            >
+              <svg fill="none" viewbox="0 0 15 15" height="1.5em" width="1.5em">
+                <path
+                  stroke="#d0b200"
+                  d="M11 3.5h1M4.5.5h6a4 4 0 014 4v6a4 4 0 01-4 4h-6a4 4 0 01-4-4v-6a4 4 0 014-4zm3 10a3 3 0 110-6 3 3 0 010 6z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Follow us Section end-->
+
+    <!--footer section start-->
+    <section class="bg-[#0D2436] py-20">
+      <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid-cols-1">
+          <div
+            class="flex flex-col items-center justify-center font-['Poppins'] gap-5 text-center"
+          >
+            <img
+              src="./assets/food-munch-img.png"
+              alt="food-munch-img"
+              class="h-20"
+            />
+            <p class="text-sm font-semibold text-[#959EAD]">
+              orderfood@foodmunch.com
+            </p>
+            <p class="text-sm text-[#939CAB]">
+              123 Ayur Vigyan Nagar, New Delhi, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer Section End-->
+    
   </body>
 </html>
