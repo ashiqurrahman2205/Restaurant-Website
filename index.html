@@ -6,10 +6,122 @@
     <title>Food Munch</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/food-munch-img.png">
   </head>
   <body>
+    <!--navbar-->
+    <header>
+      <div class="2xl:container bg-white font-['Poppins'] fixed top-0 w-[100vw]">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div class="flex items-center h-[12vh] justify-between">
+           <div> 
+            <img
+            src="./assets/food-munch-img.png"
+            alt="food-munch-img"
+            class="h-[70px] md:px-20"
+          />
+           </div>
+            <div class="md:hidden cursor-pointer">
+              <svg
+                fill="none"
+                viewBox="0 0 15 15"
+                height="1em"
+                width="1em"
+                id="ham"
+                class=""
+              >
+                <path
+                  fill="currentColor"
+                  fillrule="evenodd"
+                  d="M1.5 3a.5.5 0 000 1h12a.5.5 0 000-1h-12zM1 7.5a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5zm0 4a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5z"
+                  cliprule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                fill="none"
+                viewBox="0 0 15 15"
+                height="1em"
+                width="1em"
+                id="cross"
+                class="hidden"
+              >
+                <path
+                  fill="currentColor"
+                  fillrule="evenodd"
+                  d="M11.782 4.032a.575.575 0 10-.813-.814L7.5 6.687 4.032 3.218a.575.575 0 00-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 00.814.814L7.5 8.313l3.469 3.469a.575.575 0 00.813-.814L8.313 7.5l3.469-3.468z"
+                  cliprule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class=" hidden md:block" id="content">
+            <ul
+              class="flex flex-col gap-y-5 md:flex-row md:justify-evenly md:items-center h-[100%] "
+            >
+              <li id="1" class="cursor-pointer"><a href="#why-choose">Why Choose us?</a></li>
+              <li id="2" class="cursor-pointer"><a href="#explore-menu">Explore Menu</a></li>
+              <li id="3" class="cursor-pointer"><a href="#payment">Delivery & Payment</a></li>
+              <li id="4" class="cursor-pointer"><a href="#follow-us">Follow Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--navbar end-->
+    <script>
+      const ham=document.getElementById("ham")
+      const cross=document.getElementById("cross")
+      const content=document.getElementById("content")
+      const why=document.getElementById("1")
+      const explore=document.getElementById("2")
+      const delivery=document.getElementById("3")
+      const follow=document.getElementById("4")
+
+      ham.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+
+      cross.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+
+      why.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+
+      explore.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+
+      delivery.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+
+      follow.addEventListener("click",()=>{
+        cross.classList.toggle("hidden")
+        ham.classList.toggle("hidden")
+        content.classList.toggle("hidden")
+      })
+    </script>
+
+
+
+
+
+
+
     <!--Hero Section Starting-->
-    <section>
+    <section id="hero">
       <div class="2xl:container bg-green-300 bg-hero-section">
         <div class="w-[90%] mx-auto grid grid-cols-1 h-[100%] text-center">
           <div
@@ -34,7 +146,7 @@
     <!--Hero Section Ending-->
 
     <!--Why choose us section start-->
-    <section class="py-10 bg-[#F9FBFE]">
+    <section class="py-10 bg-[#F9FBFE]" id="why-choose">
       <div class="2xl:container">
         <div class="w-[90%] mx-auto grid grid-cols-1">
           <h2 class="font-['Poppins'] text-2xl font-semibold">
@@ -88,7 +200,7 @@
     <!-- why choose us section end-->
 
     <!--Explore menu starting-->
-    <section class="mb-10">
+    <section class="mb-10" id="explore-menu">
       <div class="2xl:container">
         <div
           class="w-[90%] mx-auto grid grid-cols-1 font-['Poppins'] text-2xl font-semibold m-5"
@@ -270,7 +382,7 @@
     <!--Explore Menu End-->
 
     <!--Healthy Section Starting-->
-    <section>
+    <section class="bg-[#f9fbfe]">
       <div class="2xl:container bg-[#F9FBFE]">
         <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
           <div class="flex justify-center items-center">
@@ -303,7 +415,7 @@
     <!--Healthy Section End-->
 
     <!--Payment Sectioon Starting-->
-    <section class="py-10">
+    <section class="py-10" id="payment">
       <div class="2xl:container">
         <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
           <div
@@ -392,7 +504,7 @@
     <!--Thnak You Section Ending-->
 
     <!--Follow us Section start-->
-    <section class="py-20">
+    <section class="py-20" id="follow-us">
       <div class="2xl:container">
         <div class="w-[90%] mx-auto grid grid-cols-1 gap-4">
           <div class="flex justify-center">
@@ -468,6 +580,5 @@
       </div>
     </section>
     <!--footer Section End-->
-    
   </body>
 </html>
